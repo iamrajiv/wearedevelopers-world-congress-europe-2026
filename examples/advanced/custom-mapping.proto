@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package advanced;
+
+import "google/api/annotations.proto";
+
+option go_package = "github.com/iamrajiv/wearedevelopers-world-congress-europe-2026/examples/advanced/gen/go/advanced";
+
+// service UserService demonstrates advanced HTTP mappings
+service UserService {
+  // GetUser retrieves a user by ID
+  rpc GetUser(GetUserRequest) returns (User) {
+    option (google.api.http) = {get: "/v1/users/{user_id}"};
+  }
+
+  // UpdateUser updates a user
+  rpc UpdateUser(UpdateUserRequest) returns (User) {
+    option (google.api.http) = {
+      put: "/v1/users/{user_id}"
+      body: "user"
+    };
+  }
+
+  // ListUsers returns a list of users
+  rpc ListUsers(ListUsersRequest) returns (ListUsersResponse) {
+    option (google.api.http) = {get: "/v1/users"};
+  }
+
+  // DeleteUser deletes a user
+  rpc DeleteUser(DeleteUserRequest) returns (DeleteUserResponse) {
+    option (google.api.http) = {delete: "/v1/users/{user_id}"};
+  }
+
+  // CreateUser creates a new user
+  rpc CreateUser(CreateUserRequest) returns (User) {
+    option (google.api.http) = {
+      post: "/v1/users"
+      body: "*"
+    };
+  }
+}
+
+...

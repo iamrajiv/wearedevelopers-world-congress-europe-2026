@@ -1,0 +1,13 @@
+version: v2
+modules:
+  - path: proto
+    name: buf.build/wearedevelopers-world-congress-europe-2026/hello
+deps:
+  - buf.build/googleapis/googleapis
+lint:
+  use:
+    - STANDARD
+    - FILE_LOWER_SNAKE_CASE
+  ignore:
+    # Ignore the response naming convention for streaming RPCs
+    - RPC_RESPONSE_STANDARD_NAME

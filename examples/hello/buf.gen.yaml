@@ -1,0 +1,21 @@
+version: v2
+managed:
+  enabled: true
+  disable:
+    - module: buf.build/googleapis/googleapis
+  override:
+    - file_option: go_package_prefix
+      value: github.com/iamrajiv/wearedevelopers-world-congress-europe-2026/examples/hello/gen/proto
+plugins:
+  - remote: buf.build/protocolbuffers/go:v1.36.11
+    out: gen/proto
+    opt:
+      - paths=source_relative
+  - remote: buf.build/grpc/go:v1.5.1
+    out: gen/proto
+    opt:
+      - paths=source_relative
+  - remote: buf.build/grpc-ecosystem/gateway:v2.29.0
+    out: gen/proto
+    opt:
+      - paths=source_relative
