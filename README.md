@@ -1,6 +1,6 @@
 # Exploring the Power of gRPC-Gateway for Writing RESTful Services
 
-WeAreDevelopers World Congress 2026 Europe, Virtual Stage, 8th–10th July 2026
+WeAreDevelopers World Congress 2026 Europe Virtual Stage, 30th June 2026
 
 - Rajiv Ranjan Singh
 
