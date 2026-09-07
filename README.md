@@ -3,26 +3,3 @@
 WeAreDevelopers World Congress Europe 2026, Virtual, 30th June 2026
 
 - Rajiv Ranjan Singh
-
-## About
-
-What gRPC-Gateway is and how it works, the ways to do gRPC-Gateway HTTP mapping, and
-building a hello world service that serves both gRPC and RESTful HTTP clients from a
-single protobuf definition — plus the production concerns: custom URL mappings,
-streaming, and error handling.
-
-Delivered as a pre-recorded session for the World Congress virtual track, published
-on the WeAreDevelopers platform.
-
-## Slides
-
-[`main.slide`](main.slide) — Go present format. Run locally with
-`present -http=:3999`.
-
-## Recording
-
-[Watch on WeAreDevelopers](https://www.wearedevelopers.com/videos/2072/exploring-the-power-of-grpc-gateway-for-writing-restful-services)
-
-## License
-
-[MIT](LICENSE)
