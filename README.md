@@ -1,6 +1,6 @@
 # Exploring the Power of gRPC-Gateway for Writing RESTful Services
 
-WeAreDevelopers World Congress 2026 Europe Virtual Stage, 30th June 2026
+WeAreDevelopers World Congress 2026 Europe, Virtual, 30th June 2026
 
 - Rajiv Ranjan Singh
 
@@ -11,7 +11,7 @@ building a hello world service that serves both gRPC and RESTful HTTP clients fr
 single protobuf definition — plus the production concerns: custom URL mappings,
 streaming, and error handling.
 
-Delivered as a pre-recorded session for the World Congress Virtual Stage, published
+Delivered as a pre-recorded session for the World Congress virtual track, published
 on the WeAreDevelopers platform.
 
 ## Slides
